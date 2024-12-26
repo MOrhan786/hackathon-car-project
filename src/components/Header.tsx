@@ -11,7 +11,9 @@ export default function Header() {
         <Image
           src="/Logo .png"
           alt="Logo"
-          className="w-full h-full object-contain ml-4"
+          width={120}
+          height={40}
+          className=" object-contain ml-4"
         />
       </div>
 
@@ -20,26 +22,38 @@ export default function Header() {
         <Image
           src="/search-normal.png"
           alt="Search"
-          className="w-[20px] h-[20px]"
+          width={20}
+          height={20}
+       
         />
         <input
           type="text"
           placeholder="Search something here"
           className="flex-1 bg-transparent border-none outline-none text-sm px-2 w-[492px] h-[44px]"
         />
-        <Image src="/filter.png" alt="Filter" className="w-[20px] h-[20px]" />
+        <Image src="/filter.png" 
+        alt="Filter"
+        width={20}
+        height={20}
+         />
       </div>
 
       {/* Profile Icons */}
       <div className="flex items-center space-x-4 mt-4 md:mt-0">
         <a href="#">
-          <Image src="/Like.png" alt="Like" className="w-[36px] h-[36px]" />
+          <Image src="/Like.png"
+           alt="Like"
+           width={36}
+            height={36}
+            />
         </a>
         <a href="#">
           <Image
             src="/Notification.png"
             alt="Notification"
-             className="w-[36px] h-[36px]"
+            width={36}
+            height={36}
+      
          
            
           />
@@ -48,14 +62,18 @@ export default function Header() {
           <Image
             src="/Settings.png"
             alt="Settings"
-            className="w-[36px] h-[36px]"
+            width={36}
+            height={36}
+          
           />
         </a>
         <a href="#">
           <Image
             src="/profile.png"
             alt="profile"
-            className="w-[44px] h-44px rounded-full"
+            width={44}
+            height={44}
+            className=" rounded-full"
           />
         </a>
       </div>
